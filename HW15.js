@@ -16,7 +16,7 @@ modalInput.addEventListener(`click`, ({ target }) => {
 
 function saveUserInput() {
     const inputElement = document.getElementById('name-input');
-    const enteredValue = inputElement.value.trim();
+    const enteredValue = inputElement.value.toLowerCase().trim();
     if (enteredValue === '') {
         alert('Введите хотя бы одно слово.');
         return;
